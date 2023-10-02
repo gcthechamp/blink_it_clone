@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*,.roboto
+{
+    font-family:'Roboto',sans-serif;
+}
+
+nav
+{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#delivery
+{
+    width: 165px;
+}
+
+#delivery>h3
+{
+    font-weight: 800;
+}
+
+#vertical_line
+{
+    border-left: 2px solid gray;
+    height: 20px;
+}
+
+#login_link
+{
+    text-decoration: none;
+}
+
+#login_link:link
+{
+    color: black;
+}
+
+nav>button>svg
+{
+    width: 20px;
+
+}
+
+#search-bar
+{
+    width: 35vw; /*578px;*/
+    margin-right: 4vw;
+}
+
+#login
+{
+    width: 5vw;
+    margin-right: 3vw;
+}
+
+#my_cart
+{
+    width: 128px;
+}
+
+#search-bar,#search-bar>input
+{
+    background-color: #F8F8F8;
+}
+
+#hero>img
+{
+    width: 75vw; /*1158px*/
+    margin-inline: 10.5vw; /*165px*/
+}
+
+#about
+{
+    width: 75vw; /*1131px;*/
+    white-space: nowrap;
+    margin-left: 11.5vw;
+    overflow: scroll;
+}
+
+
+.box
+{
+    width: 325px;
+}
+
+#items
+{
+    width: 77vw; /*1158px*/;
+    margin-left: 10.5vw;
+}
+
+.item
+{
+    width: 110px;
+}
+
+.card
+{
+    width: 218px;
+    height: 284px;
+}
+
+.card_img
+{
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.card-text
+{
+    color: #D2DFE8;
+    margin-top: -9px;
+}
+
+.add_button
+{
+    width: 128px;
+    height: 36px;
+    background-color: #F5FFF7;
+}    
+
+.price
+{
+    font-size:larger;
+    width: 50px;
+}
+
+#products
+{
+    width: 75vw;
+    margin-left: 10.5vw;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+#footer
+{
+    margin-top: 76px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px)
+{
+    #hero
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1074px)
+{
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #search-bar
+    {
+        width: 250px;
+    }
+
+    .nav-element
+    {
+        margin-inline: 10px; 
+        margin-bottom: 15px;
+    }
+
+    
+}
