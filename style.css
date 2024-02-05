@@ -6,10 +6,15 @@
 
 nav
 {
-    margin-top: 56px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index:99;
+    background-color: white;
+    border-bottom: 2px solid #f5f5f5;
 }
 
 #delivery
@@ -61,9 +66,30 @@ nav>button>svg
     width: 128px;
 }
 
-#search-bar,#search-bar>input
+#search-bar,#search-bar>input,#search-bar-2,#search-bar-2>input
 {
     background-color: #F8F8F8;
+}
+
+#search-bar-2
+{
+    width: 90vw;
+}
+
+#nav-2-div-1
+{
+    width: 98%;
+} 
+
+#user_acc>i
+{
+    width: 40px;
+}
+
+#nav-2
+{
+    border-bottom: 2px solid #f5f5f5;
+    display: none;
 }
 
 #hero>img
@@ -90,6 +116,7 @@ nav>button>svg
 {
     width: 77vw; /*1158px*/;
     margin-left: 10.5vw;
+    flex-wrap: wrap;
 }
 
 .item
@@ -101,6 +128,19 @@ nav>button>svg
 {
     width: 218px;
     height: 284px;
+}
+
+.card-body
+{
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.card-title
+{
+    font-size: 15px;
+    font-weight: 500;
+    white-space: wrap;
 }
 
 .card_img
@@ -119,7 +159,7 @@ nav>button>svg
 
 .add_button
 {
-    width: 128px;
+    width: 60px;
     height: 36px;
     background-color: #F5FFF7;
 }    
@@ -130,19 +170,148 @@ nav>button>svg
     width: 50px;
 }
 
+
 #products
 {
     width: 75vw;
+    height: 312px;
     margin-left: 10.5vw;
     white-space: nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
+}
+
+.products-heading
+{
+    width: 75vw;
+    margin-left: 10.5vw;
+}
+
+#miscellaneous
+{
+    margin-top: 100px;
+    margin-left: 10.5vw;
+}
+
+#table-1
+{
+    margin-right: 10px;
+}
+
+thead
+{
+    padding: 5px 0px 0px 0px;
+    height: 68px;
+}
+
+td
+{
+    width: 160px;
+    color: #888888;
+}
+ 
+#categories-table
+{
+    padding: 5px 0px 0px 0px;
+    height: 75px;
+}
+
+#see-all-2
+{
+    text-decoration: none;
+}
+
+.categories-items
+{
+    width: 250px;
+    color: #888888;
+}
+
+#ads
+{
+    margin-top: 20px;
+    margin-left: 10.5vw;
+    width: 85vw;
+}
+
+#ads>p
+{
+    font-size: 14px;
+    width: 321px;
+    color: #888888;
+}
+
+#download
+{
+    width: 350px;
+}
+
+.butn
+{
+ background-color:#213b50;
+ color: #cdd7dd;
+ height: 36px;
+}
+
+.logo
+{
+    width: 20px;
+}
+
+.small-text
+{
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 0rem;
+}
+
+.para
+{
+    margin-bottom: 0rem;
+}
+
+#social
+{
+    width: 350px;
+}
+
+.social-icon
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 #footer
 {
-    margin-top: 76px;
+    margin-top: 12px;
     font-weight: 600;
     text-align: center;
+}
+
+
+
+.icon
+{
+    width: 10px;
+}
+
+.hide
+{
+    display: none;
+}
+
+.display-block
+{
+    display: block;
+}
+
+
+#others-2 p
+{
+    font-weight: 500;
+    font-size: 18px;
+    color: #676767;
 }
 
 @media screen and (max-width: 576px)
@@ -153,26 +322,44 @@ nav>button>svg
     }
 }
 
-@media screen and (max-width: 1074px)
+@media screen and (max-width: 1100px)
 {
     nav
     {
-        display: flex;
+        display: none;
+    }
+    #others
+    {
+        display: none;
+    }
+    #others-2
+    {
+        display: block;
+    }
+    #miscellaneous
+    {
+        flex-direction: column;
+       
+    }
+
+    #table-1
+    {
+        margin-bottom: 10px;
+    }
+
+    #ads
+    {
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
     }
 
-    #search-bar
+    #nav-2
     {
-        width: 250px;
+        display: block;
+        position: sticky;
+        background-color: white;
+        top: 0px;
+        z-index: 1;
     }
-
-    .nav-element
-    {
-        margin-inline: 10px; 
-        margin-bottom: 15px;
-    }
-
-    
 }
+
